@@ -19,11 +19,11 @@ ul {
 }
 
 header,
-.hero {
-    margin-inline: 20vw;
+.hero,
+.info {
+    padding-inline: 20vw;
     display: flex;
     align-items: center;
-    
 }
 
 a {
@@ -35,7 +35,6 @@ a {
 
 h1 {
     margin: 0;
-    font-size: 48px;
     font-weight: 900;
 }
 
@@ -53,6 +52,10 @@ header {
     flex: 1;
 }
 
+.hero h1 {
+    font-size: 48px;
+}
+
 .hero .left {
     display: flex;
     flex-direction: column;
@@ -63,4 +66,40 @@ header {
     text-align: center;
     background-color: rgba(229, 231, 235, 0.2);
     padding: 100px 50px;
+}
+
+.info {
+    background-color: #FFF;
+    flex-direction: column;
+}
+
+.info > * {
+    color: #1F2937;
+}
+
+.info h1 {
+    font-size: 36px;
+}
+
+.gallery {
+    display: flex;
+    gap: 48px;
+}
+
+.card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3882F6;
+    border-radius: 16px;
+}
+
+.caption {
+    width: 150px;
 }
