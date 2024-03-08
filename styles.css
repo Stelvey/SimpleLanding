@@ -49,6 +49,10 @@ header .secondary {
     font-size: 18px;
 }
 
+.hero {
+    padding-block: 100px;
+}
+
 .hero > * {
     flex: 1;
 }
@@ -79,10 +83,12 @@ header .secondary {
 }
 
 .info h1 {
+    margin-block: 48px;
     font-size: 36px;
 }
 
 .gallery {
+    margin-bottom: 100px;
     display: flex;
     gap: 48px;
 }
@@ -108,6 +114,7 @@ header .secondary {
 .quote {
     color: #1F2937;
     background-color: #E5E7EB;
+    padding-block: 100px;
     padding-inline: 26vw;
     flex-direction: column;
 }
