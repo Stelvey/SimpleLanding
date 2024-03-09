@@ -43,13 +43,13 @@ footer,
 .hero,
 .quote,
 .action {
-    padding-block: 100px;
+    padding-block: 10vh;
 }
 
 .button {
     background-color: #3882F6;
     border-radius: 8px;
-    padding: 8px 24px;
+    padding: 8px 32px;
     align-self: flex-start;
 }
 
@@ -79,6 +79,7 @@ footer .secondary {
 }
 
 .hero {
+    flex-wrap: wrap;
     gap: 42px;
 }
 
@@ -113,14 +114,16 @@ footer .secondary {
 }
 
 .info h1 {
-    margin-block: 48px;
+    margin-block: 5vh;
     font-size: 36px;
 }
 
 .gallery {
-    margin-bottom: 100px;
+    margin-bottom: 10vh;
     display: flex;
+    flex-wrap: wrap;
     gap: 48px;
+    justify-content: center;
 }
 
 .card {
@@ -144,8 +147,8 @@ footer .secondary {
 .quote {
     color: #1F2937;
     background-color: #E5E7EB;
-    padding-inline: 26vw;
     flex-direction: column;
+    gap: 16px;
 }
 
 .quote .primary {
@@ -167,9 +170,11 @@ footer .secondary {
 
 .box {
     background-color: #3882F6;
-    padding: 50px 150px;
+    padding: 4vh 8vw;
     border-radius: 8px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
     justify-content: space-between;
     align-items: center;
 }
@@ -178,4 +183,29 @@ footer .secondary {
     border: 2px solid #FFF;
     border-radius: 8px;
     align-self: center;
+}
+
+@media only screen and (max-device-width: 1190px) {
+    header,
+    footer,
+    .hero,
+    .info,
+    .quote,
+    .action {
+        padding-inline: 10vw;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .hero,
+    .quote,
+    .action {
+        padding-block: 5vh;
+    }
+    
+    .gallery {
+        gap: 28px;
+    }
 }
