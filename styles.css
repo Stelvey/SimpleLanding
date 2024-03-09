@@ -32,7 +32,6 @@ ul {
 header,
 footer,
 .hero,
-.info,
 .quote,
 .action {
     padding-inline: 20vw;
@@ -105,7 +104,9 @@ footer .secondary {
 }
 
 .info {
+    text-align: center;
     background-color: #FFF;
+    display: flex;
     flex-direction: column;
 }
 
