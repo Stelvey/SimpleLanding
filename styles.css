@@ -151,10 +151,10 @@ header {
 
 .box {
     background-color: #3882F6;
-    padding: 50px;
+    padding: 50px 150px;
     border-radius: 8px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
