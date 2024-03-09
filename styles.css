@@ -78,6 +78,10 @@ footer .secondary {
     font-size: 18px;
 }
 
+.hero {
+    gap: 42px;
+}
+
 .hero > *,
 .action > * {
     flex: 1;
